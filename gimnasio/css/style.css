@@ -1,0 +1,80 @@
+:root {
+
+    /* Fuentes del proyecto */
+    --fuentePri: sans-serif;
+    --fuenteSec: sans-serif;
+
+    /* Colores del proyecto */
+   --colorPri: #a2b0be;
+   --colorSec: #f7d92e;
+   --colorTer: #8550f5;
+   --colorCua: #000000;
+ 
+}
+
+html {
+   box-sizing: border-box; /* 1rem = 10px */
+   font-size: 62.5%;
+}
+
+body {
+   font-family: var(--fuentePri);
+   font-size: 1.6rem;
+}
+
+h1 {
+   font-size: 3.2rem; 
+}
+
+h2 {
+   font-size: 2.8rem; 
+}
+
+h3 {
+   font-size: 2.4rem; 
+}
+
+h4 {
+   font-size: 2rem ; 
+}
+
+/* Globales */
+.contenedor {
+   max-width: 120rem; 
+   margin: 0 auto;
+}
+
+/* Apoyo */
+.no-margin {
+   margin: 0; 
+}
+
+.centrar-texto {
+   text-align: center; 
+}
+
+/* Header */
+.header {
+   display: flex; 
+   justify-content: space-around;
+   background-color: var(--colorSec);
+}
+
+.logo {
+    font-size: 3.2rem;
+    color: var(--colorTer);
+}
+
+.logo__comp {
+    font-size: 3rem;
+    color: var(--colorCua);
+    font-weight: bold;
+}
+
+.navegacion {
+   display: flex; 
+   justify-content: space-between;
+   align-items: center;
+}
+
+

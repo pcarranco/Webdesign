@@ -1,14 +1,14 @@
 :root {
 
     /* Fuentes del proyecto */
-    --fuentePri: sans-serif;
-    --fuenteSec: sans-serif;
+    --fontPri: 'Signika', sans-serif;
+    --fontSec: 'Permanent Marker', cursive;
 
     /* Colores del proyecto */
-   --colorPri: #a2b0be;
-   --colorSec: #f7d92e;
-   --colorTer: #8550f5;
-   --colorCua: #000000;
+   --colorPri: #a2b0be; /* Gris */
+   --colorSec: #f7d92e; /* Amarillo */
+   --colorTer: #8550f5; /* Morado */
+   --colorCua: #000000; /* Negro */
  
 }
 
@@ -18,7 +18,7 @@ html {
 }
 
 body {
-   font-family: var(--fuentePri);
+   font-family: var(--fontPri);
    font-size: 1.6rem;
 }
 
@@ -27,42 +27,55 @@ h1 {
 }
 
 h2 {
-   font-size: 2.8rem; 
+    font-size: 2.8rem; 
 }
 
 h3 {
-   font-size: 2.4rem; 
+    font-size: 2.4rem; 
 }
 
 h4 {
-   font-size: 2rem ; 
+    font-size: 2rem ; 
 }
 
+a {
+    text-decoration: None; 
+}
+
+img {
+   max-with: 100%;
+}
 /* Globales */
 .contenedor {
-   max-width: 120rem; 
-   margin: 0 auto;
+    max-width: 90%; 
+    margin: 0 auto;
 }
 
 /* Apoyo */
 .no-margin {
-   margin: 0; 
+    margin: 0; 
 }
 
 .centrar-texto {
-   text-align: center; 
+    text-align: center; 
 }
 
 /* Header */
 .header {
-   display: flex; 
-   justify-content: space-around;
-   background-color: var(--colorSec);
+    padding: 2rem;
+    background-color: var(--colorSec);
+}
+
+.barra {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo {
-    font-size: 3.2rem;
+    font-size: 10rem;
     color: var(--colorTer);
+    font-family: var(--fontSec);
 }
 
 .logo__comp {
@@ -74,7 +87,62 @@ h4 {
 .navegacion {
    display: flex; 
    justify-content: space-between;
-   align-items: center;
 }
 
 
+.navegacion__enlace {
+   padding: 0 1.5rem;
+   color: var(--colorCua);
+   font-weigh: 700;
+}
+
+/* Contenido */
+
+.main {
+    dispaly: flex;
+    flex-direction: column;  
+
+}
+
+.entrada {
+    display: flex;
+    justify-content: space-evenly;    
+    margin: 1rem;
+}
+
+.tarjeta__entrada__imagen {
+    padding: 1rem; 
+    background-color: var(--colorPri);
+    border-radius: 2.5rem;
+}
+
+.entrada__imagen {
+    max-width: 40rem; 
+    max-heigh: 40rem;
+    padding: 1rem;
+    border-radius: 5em/5em;
+}
+
+.entrada__contenido {
+    padding: 1rem;
+    
+}
+
+.entrada__contenido__titulo {
+   font-family: var(--fontSec); 
+}
+
+.entrada__contenido__texto {
+    align-text: center;
+}
+
+/* Footer */
+.footer {
+   background-color: var(--colorCua);
+   color: var(--colorPri);
+}
+
+.barra__footer {
+   heigh: 10rem;
+    
+}

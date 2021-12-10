@@ -3,51 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <title>Inicio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Signika:wght@400;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <div class="contenedor">
-        <header class="header">
-            <div class="logo">Super<spa class='logo__comp'>Gym</spa></div>
-            <nav class="navegacion">
-                <a href="#">Inicio</a>
-                <a href="#">Nosotros</a>
-                <a href="#">Membresias</a>
-                <a href="#">Locaciones</a>
-                <a href="#">Contacto</a>
-            </nav>
-        </header>
-        <mai>
-            <div class="entrada">
-                <img src="" alt="">
-                <div class="entrada__contenido">
-                    <p class="contenido">
-                        Hola este es un texto de prueba por favor revisa el resto de nuestra informacion en la pagina
-                        con esto nos ayudaras a mejorar la experiencia del usuario al ingresar en nuestroa pagina
-                    </p>
-                </div>
-            </div>
-            <div class="promociones">
-                <h1 class="promociones__titulo">
-                    Promociones
-                </h1>
-                <div class="div promociones__contenido">
-                    <div class="promocion">
-                        <p>Datos Promocion</p>
-                    </div>
-                    <div class="promocion">
-                        <p>Datos Promocion</p>
-                    </div>
-                    <div class="promocion">
-                        <p>Datos Promocion</p>
-                    </div>
-                </div>
-            </div>
 
-        </mai>        
-        <footer>
-            <p class="footer"></p>
-        </footer>
-    </div>
+<body class="no-margin">
+
+    <header class="header">
+        <div class="contenedor barra">
+            <a class="logo" href="#">
+                <h1 class="logo__nombre no-margin centrar-texto">
+                    Super<spa class='logo__comp'>Gym</spa>                
+                </h1>
+            </a>
+            <nav class="navegacion">
+                <a class="navegacion__enlace" href="#">Inicio</a>
+                <a class="navegacion__enlace" href="#">Nosotros</a>
+                <a class="navegacion__enlace" href="#">Membresias</a>
+                <a class="navegacion__enlace" href="#">Locaciones</a>
+                <a class="navegacion__enlace" href="#">Contacto</a>
+            </nav>
+        </div>
+    </header>
+    <main class="contenedor main">
+        <div class="entrada">
+            <div class="tarjeta__entrada__imagen">
+                <img src="./imagenes/victor-freitas-unsplash.jpg" class="entrada__imagen" alt="">
+            </div>
+            <div class="entrada__contenido">
+                <h1 class="entrada__contenido__titulo">Superate!!</h1>
+                <p class="entrada__contenido__texto">
+                    Hola este es un texto de prueba por favor revisa el resto de nuestra informacion en la pagina
+                    con esto nos ayudaras a mejorar la experiencia del usuario al ingresar en nuestroa pagina
+                </p>
+            </div>
+        </div>
+        <div class="promociones">
+            <h1 class="promociones__titulo">
+                Promociones
+            </h1>
+            <div class="div promociones__contenido">
+                <div class="promocion">
+                    <p>Datos Promocion</p>
+                </div>
+                <div class="promocion">
+                    <p>Datos Promocion</p>
+                </div>
+                <div class="promocion">
+                    <p>Datos Promocion</p>
+                 </div>
+            </div>
+        </div>
+    </main>        
+    <footer class="footer">
+        <div class="contenedor barra__footer">
+            <p class="footer__info">Pagina creada por Pedro Carranco</p>
+        </div>
+    </footer>
 </body>
+
 </html>

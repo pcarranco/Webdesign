@@ -101,26 +101,15 @@ img {
 .main {
     dispaly: flex;
     flex-direction: column;  
-
 }
 
 .entrada {
     display: flex;
     justify-content: space-evenly;    
-    margin: 1rem;
-}
-
-.tarjeta__entrada__imagen {
-    padding: 1rem; 
-    background-color: var(--colorPri);
-    border-radius: 2.5rem;
-}
-
-.entrada__imagen {
-    max-width: 40rem; 
-    max-heigh: 40rem;
-    padding: 1rem;
-    border-radius: 5em/5em;
+    color: var(--colorPri); 
+    background-image: url(../imagenes/victor-freitas-unsplash.jpg);
+    background-size: cover;
+    height: 60rem;
 }
 
 .entrada__contenido {
@@ -130,10 +119,16 @@ img {
 
 .entrada__contenido__titulo {
    font-family: var(--fontSec); 
+   font-size: 5rem;
 }
 
 .entrada__contenido__texto {
     align-text: center;
+    fotn-size: 3rem;
+}
+
+.promociones__titulo {
+    text-align: center;     
 }
 
 /* Footer */

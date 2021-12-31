@@ -5,12 +5,13 @@
     --fontSec: 'Permanent Marker', cursive;
 
     /* Colores del proyecto */
-   --colorPri: #a2b0be; /* Gris */
-   --colorSec: #f7d92e; /* Amarillo */
-   --colorTer: #8550f5; /* Morado */
-   --colorCua: #000000; /* Negro */
+   --colorPri: #F5F5F5; /* Gris */
+   --colorSec: #000000; /* Amarillo */
+   --colorTer: #ED4516; /* Negro */
  
 }
+
+/* General */
 
 html {
    box-sizing: border-box; /* 1rem = 10px */
@@ -43,15 +44,16 @@ a {
 }
 
 img {
-   max-with: 100%;
+   max-width: 100%;
 }
-/* Globales */
+
+/* Apoyo */
+
 .contenedor {
     max-width: 90%; 
     margin: 0 auto;
 }
 
-/* Apoyo */
 .no-margin {
     margin: 0; 
 }
@@ -63,7 +65,7 @@ img {
 /* Header */
 .header {
     padding: 2rem;
-    background-color: var(--colorSec);
+    background-color: var(--colorPri);
 }
 
 .barra {
@@ -78,10 +80,16 @@ img {
     font-family: var(--fontSec);
 }
 
-.logo__comp {
-    font-size: 3rem;
-    color: var(--colorCua);
-    font-weight: bold;
+.redes__sociales {
+   display: flex; 
+   justify-content: space-between;
+   
+}
+
+.redes__sociales__icono {
+   padding: 0 1.5rem;
+   color: var(--colorSec);
+   font-weigh: 700;
 }
 
 .navegacion {
@@ -92,7 +100,7 @@ img {
 
 .navegacion__enlace {
    padding: 0 1.5rem;
-   color: var(--colorCua);
+   color: var(--colorSec);
    font-weigh: 700;
 }
 
@@ -101,40 +109,52 @@ img {
 .main {
     dispaly: flex;
     flex-direction: column;  
+    background-color: var(--colorPri);
 }
 
-.entrada {
+.seccion {
+   display: grid; 
+   grid-template-columns: 1fr 1fr;
+}
+
+.tarjeta__columna {
     display: flex;
-    justify-content: space-evenly;    
-    color: var(--colorPri); 
-    background-image: url(../imagenes/victor-freitas-unsplash.jpg);
-    background-size: cover;
-    height: 60rem;
+    flex-direction: column;    
 }
 
-.entrada__contenido {
-    padding: 1rem;
+.tarjeta__mensaje {
+    text-align: left;
+    justify-content: center;
+    padding: 4rem;    
+}
+
+.tarjeta__botones {
+   margin: 2rem; 
+   display: flex;
+   justify-content: space-evenly;
+}
+
+.boton {
+   padding: 1rem;
+   background-color: var(--colorSec);
+   border: None;
+   color: var(--colorPri);
     
 }
 
-.entrada__contenido__titulo {
-   font-family: var(--fontSec); 
-   font-size: 5rem;
+.tarjeta__imagen {    
+   display: flex;
+   align-items: center;
 }
 
-.entrada__contenido__texto {
-    align-text: center;
-    fotn-size: 3rem;
+.imagen__rectangular {
+   heigh: 80%;
+   width: 60%; 
 }
 
-.promociones__titulo {
-    text-align: center;     
-}
-
-/* Footer */
 .footer {
-   background-color: var(--colorCua);
-   color: var(--colorPri);
+   background-color: var(--colorPri);
+   color: var(--colorSec);
 }
 
 .barra__footer {

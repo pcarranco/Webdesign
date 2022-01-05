@@ -5,9 +5,10 @@
     --fontSec: 'Permanent Marker', cursive;
 
     /* Colores del proyecto */
-   --colorPri: #F5F5F5; /* Gris */
-   --colorSec: #000000; /* Amarillo */
-   --colorTer: #ED4516; /* Negro */
+   --colorPri: #F5F5F5; /* Gris claro */
+   --colorSec: #000000; /* Negro */
+   --colorTer: #ED4516; /* Naranja */
+   --colorLeyenda: #B8B3B3 /*Gris oscuro*/
  
 }
 
@@ -90,7 +91,13 @@ img {
    padding: 0 1.5rem;
    color: var(--colorSec);
    font-weigh: 700;
+   
 }
+
+.icono {
+   height: 3rem;    
+}
+
 
 .navegacion {
    display: flex; 
@@ -115,6 +122,7 @@ img {
 .seccion {
    display: grid; 
    grid-template-columns: 1fr 1fr;
+   padding-bottom: 3rem;
 }
 
 .tarjeta__columna {
@@ -145,11 +153,17 @@ img {
 .tarjeta__imagen {    
    display: flex;
    align-items: center;
+   justify-content:center;
 }
 
 .imagen__rectangular {
    heigh: 80%;
    width: 60%; 
+
+}
+
+.titulo__color {
+    color: var(--colorTer);
 }
 
 .footer {
@@ -160,4 +174,8 @@ img {
 .barra__footer {
    heigh: 10rem;
     
+}
+
+.leyenda__footer {
+   color: var(--colorLeyenda); 
 }
